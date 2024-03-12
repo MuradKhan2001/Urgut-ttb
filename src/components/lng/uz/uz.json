@@ -1,0 +1,51 @@
+{
+  "home": "Bosh sahifa",
+  "organizations": "Shifokorlar",
+  "news": "Yangiliklar",
+  "teachers": "Bo'limlar",
+  "Vacancy": "Bo'sh ish o'rni",
+  "qvp": "QVP",
+  "contact": "Aloqa",
+
+  "leaders": "Raxbariyat",
+  "aboutus": "Biz haqimizda",
+
+  "textTop": "URGUT TUMAN TIBBIYOT",
+  "textBottom":"BIRLASHMASI",
+  "textDes": "Samarqand viloyati Urgut Tuman Tibbiyot Birlashmasi: Biz bilan sog'lig'ingizni kafolatlang!",
+
+  "logIn": "Kirish",
+  "address": "Manzil",
+  "phone": "Telefon",
+
+  "more": "batafsil",
+  "more2": "Ko'proq",
+
+  "name": "Ism",
+  "LastName": "Familiya",
+  "tel": "Telefon raqam",
+  "text": "Ma'lumot uchun",
+  "sentText": "Takliflar va murojaatlar uchun",
+  "sentButton": "Yuborish",
+
+  "statistic1": "Bemorlar soni",
+  "statistic2": "Bo'limlar soni",
+  "statistic3": "Xodimlar soni",
+
+  "position": "Lavozimi:",
+  "bio": "Avtobiografiya:",
+  "date": "Qabul kunlari:",
+
+  "about_service": "Xizmat haqida",
+  "doctor": "Shifokor",
+
+  "doctor2": "Biriktirilgan shifokor",
+
+  "nameVacancy": "Bo'sh ish o'rin nomi:",
+  "title": "Mutaxasislik:",
+  "title2": "Ma'lumoti:",
+  "title3": "Talab etiladigan ish tajribasi:",
+  "title4": "Maosh:",
+
+  "follow": "Bizni kuzatib boring !"
+}
