@@ -10,27 +10,29 @@
   .header-side {
     width: 100%;
     height: 10%;
+    overflow-y: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
     border-bottom: 1px solid #232323;
 
     .filter-box {
       align-items: center;
       display: flex;
+  
 
       .btns{
         display: flex;
       }
       .inputs {
         input {
-          width: 140px;
+          width: 120px;
           height: 30px;
           background-color: transparent;
           padding-left: 6px;
-          margin-right: 20px;
+          margin-right: 5px;
           border-radius: 5px;
           font-size: 12px;
         }

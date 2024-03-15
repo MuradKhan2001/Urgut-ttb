@@ -27,32 +27,28 @@ function Qvp() {
         <>
             <div className="qvp-container">
                 <Navbar/>
-                <div className="table-content">
-                    <table>
-                        <thead>
-                        <tr>
-                            <th>№</th>
-                            <th>{t('address')}</th>
-                            <th>{t('doctor2')}</th>
-                            <th>{t('phone')}</th>
-                        </tr>
-                        </thead>
+                <div className="cards-content">
+                    {qvp.map((item,index)=>{
+                        return <div key={index} className='content' >
+                        <div className='left'>
+                            <img src={item.image} ></img>
+                        </div>
+                        <div className='right'>
+                            <div className='title'>{t('nameQvp')}</div>
+                            <div className='text'>{item.name}</div>
 
-                        <tbody>
-                        {qvp.map((item, index) => {
-                            return <tr key={index}>
-                                <td>{index + 1}</td>
-                                <td>
-                                    {item.address} <br/>
-                                </td>
-                                <td>{item.doctor}</td>
-                                <td>
-                                    {item.contact}
-                                </td>
-                            </tr>
-                        })}
-                        </tbody>
-                    </table>
+                            <div className='title'>{t('address')}</div>
+                            <div className='text'>{item.address}</div>
+
+                            <div className='title'>{t('doctor2')}</div>
+                            <div className='text'>{item.doctor}</div>
+
+                            <div className='title'>{t('phone')}</div>
+                            <div className='text'>{item.contact}</div>
+                        </div>
+                    </div>
+                    })}
+                    
                 </div>
                 <Footer/>
             </div>

@@ -1,8 +1,6 @@
 .admin-home {
   width: 100%;
   height: 100vh;
-  background-image: url("./images/orqafon.png");
-  background-size: 100%;
   display: flex;
 
   .left-box {
@@ -27,7 +25,7 @@
       width: 75%;
       height: 2px;
       background: white;
-      background: linear-gradient(90deg, rgba(249, 246, 255, 0) 0%, rgb(1, 179, 176) 50%, rgba(249, 246, 255, 0) 100%);
+      background: linear-gradient(90deg, rgba(249, 246, 255, 0) 0%, #2dbb51 50%, #2dbb51 100%);
       border-radius: 50%;
     }
 
@@ -44,7 +42,7 @@
       }
       &::-webkit-scrollbar-thumb {
         border-radius: 10px;
-        background-color: #016c69;
+        background-color: #2dbb51;
         outline: none;
       }
 
@@ -59,7 +57,7 @@
         align-items: center;
         width: 100%;
         height: 40px;
-        color: #016c69;
+        color: #2dbb51;
         font-weight: bold;
         margin-top: 10px;
         cursor: pointer;
@@ -74,8 +72,8 @@
       }
 
       .active {
-        border-left: 4px solid #01b3b0;
-        border-right: 4px solid #01b3b0;
+        border-left: 4px solid #2dbb51;
+        border-right: 4px solid #2dbb51;
         background-color: rgba(255, 255, 255, 0.4);
       }
 
@@ -98,7 +96,7 @@
       .title{
         font-size: 22px;
         font-weight: bold;
-        color: #016c69;
+        color: #2dbb51;
       }
       .icons {
         display: flex;

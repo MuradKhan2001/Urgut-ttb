@@ -168,9 +168,9 @@ function Home() {
             }
         }).then((response) => {
             let newList = {
-                doctors: response.data[0].doctors,
-                services: response.data[0].services,
-                patients: response.data[0].patients
+                doctors: response.data[0] ? response.data[0].doctors : 0,
+                services: response.data[0] ? response.data[0].services : 0,
+                patients: response.data[0] ? response.data[0].patients : 0
             };
             setStatistics(newList)
         })
@@ -288,7 +288,7 @@ function Home() {
 
                         <Slider {...settingsForNews} >
                             {
-                                doctors.filter((item) => item.user_type == "Head").map((item, index) => {
+                                doctors.length > 0 && doctors.filter((item) => item.user_type == "Head").map((item, index) => {
                                     return <div key={index} data-aos="flip-right" className="click-slide-box">
                                         <div className="leader-box">
                                             <img src={item.image} alt=""/>

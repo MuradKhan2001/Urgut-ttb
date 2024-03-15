@@ -7,7 +7,7 @@ export const MyContext = createContext();
 
 const App = () => {
 
-    const [url, setUrl] = useState('http://46.101.190.197/api/v1/');
+    const [url, setUrl] = useState('https://api.narpay-ttb.uz/api/v1/');
 
     const admin = useMemo(() => localStorage.getItem('token'), []);
 

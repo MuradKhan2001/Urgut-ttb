@@ -22,7 +22,7 @@ const Login = () => {
                 password
             };
 
-            axios.post(`http://46.101.190.197/auth/v1/login/`, user).then((response) => {
+            axios.post(`https://api.narpay-ttb.uz/auth/v1/login/`, user).then((response) => {
                 setLoading("Loading...")
                 localStorage.setItem("token", response.data.token);
                 window.location.pathname = '/';
