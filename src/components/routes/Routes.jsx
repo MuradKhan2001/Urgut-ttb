@@ -66,7 +66,7 @@ export const publicRoutes = [
         element:<AboutNews/>
     },
     {
-        path:"/login",
+        path:"/login-urgut-ttb",
         element:<Login/>
     },
     {

@@ -18,25 +18,22 @@ function News() {
   const pagesVisited = pageNumber * worksPage;
   const navigate = useNavigate();
   const settingsForNews2 = {
-    lazyLoad: true,
-    slidesToShow: 1,
     dots: true,
-    infinite: true,
     navs: false,
-    speed: 1000,
-    autoplay: false,
-    slidesToScroll: 1,
-    initialSlide: 1,
-    centerMode: true,
     centerPadding: 0,
+    infinite: true,
+    speed: 1000,
+    autoplay: true,
+    slidesToShow: 1,
+    initialSlide: 1,
+    slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          infinite: true,
-          dots: true,
+          
         },
       },
       {

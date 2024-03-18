@@ -137,8 +137,6 @@ body {
       display: flex;
       justify-content: center;
       
-      
-
       .sloy {
         margin-top: 7%;
         width: 80%;
@@ -695,26 +693,29 @@ body {
         padding-left: 80px;
 
         .Events-photo {
-
-          margin-top: 20px;
-          padding: 20px;
           width: 380px;
-          height: 450px;
-          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+          height: 380px;
           overflow: hidden;
           cursor: pointer;
+          border-top-left-radius: 25px;
+          border-bottom-right-radius: 25px;
+          margin: 20px auto;
+          padding: 10px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 
           .news-box {
             height: 100%;
             width: 100%;
-
+           
+           
             .img-box {
-              margin: 0 auto;
-              width: 88%;
+              width: 100%;
               height: 60%;
               position: relative;
-              padding: 2px;
+              margin: 0 auto;
+  
               .slick-prev {
+                display: none!important;
                 width: 20px;
                 height: 20px;
                 left: -25px;
@@ -724,13 +725,14 @@ body {
                 background-position: center;
                 background-repeat: no-repeat;
                 border: 0.1px solid #2dbb51;
-
+  
                 &::before {
                   display: none;
                 }
               }
-
+  
               .slick-next {
+                display: none!important;
                 width: 20px;
                 height: 20px;
                 right: -25px;
@@ -740,132 +742,161 @@ body {
                 background-position: center;
                 background-repeat: no-repeat;
                 border: 0.1px solid #2dbb51;
-
+  
                 &::before {
                   display: none;
                 }
               }
-
+  
+              .slick-dots {
+               bottom: -15px;
+                .slick-active {
+                  button {
+                    &:before {
+                      color: #2dbb51;
+                      font-size: 14px;
+                    }
+                  }
+  
+                }
+  
+                li {
+                  button {
+                    &:before {
+                      transition: 0.3s;
+                      font-size: 14px;
+                    }
+                  }
+  
+                }
+              }
+             
+  
               .click-slide-box {
                 padding: 2px;
                 width: 100%;
+                height: 100%;
                 img{
                   object-fit: cover;
                   width: 360px;
                   height: 220px;
+                  border-radius: 8px;
                 }
+                
               }
-
+  
               video {
                 width: 100%;
                 height: 90%;
+                border-radius: 8px;
               }
-
-              .name-box {
+  
+  
+            }
+  
+            .name-box {
+              margin-top: 20px;
+              width: 100%;
+              height: 50%;
+  
+              .name-Events {
+                border-radius: 20px;
+                transition: 0.4s;
                 width: 100%;
-                height: 80%;
-
-                .name-Events {
-                  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-                  border-radius: 20px;
-                  position: absolute;
-                  bottom: -160px;
-                  left: 18px;
-                  transition: 0.4s;
-                  width: 90%;
-                  height: 80%;
-                  background-color: white;
-                  overflow: hidden;
-
-                  .content1 {
-                    width: 100%;
-                    height: 100%;
-                    padding: 15px;
-                    position: relative;
-
-                    &:hover {
-                      .content2 {
-                        top: 0;
-                      }
-                    }
-
+                height: 100%;
+                background-color: white;
+                overflow: hidden;
+  
+                .content1 {
+                  width: 100%;
+                  height: 100%;
+                  padding: 15px;
+                  position: relative;
+  
+                  &:hover {
                     .content2 {
-                      transition: .5s;
-                      width: 100%;
-                      height: 100%;
-                      position: absolute;
-                      top: -100%;
-                      left: 0;
+                      top: 0;
+                    }
+                  }
+  
+                
+                  .events-name {
+                    font-weight: 700;
+                    font-size: 14px;
+                    text-transform: none;
+                    line-height: 24px;
+                    color: #2dbb51;
+                    text-align: center;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                  }
+  
+                  .description {
+                    margin-top: 5px;
+                    width: 100%;
+                    height: 20%;
+                    font-size: 14px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                  }
+  
+                  .events-date {
+                    margin-top: 20px;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: #2dbb51;
+                    text-align: right;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .more-btn {
+                      width: 120px;
+                      height: 28px;
                       display: flex;
                       justify-content: center;
                       align-items: center;
-                      background-color: rgba(255, 255, 255, .7);
-
-                      .more-btn {
-                        width: 120px;
-                        height: 40px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                      background-color: #2dbb51;
+                      color: white;
+                      border-radius: 10px;
+                      transition: 0.4s;
+                      cursor: pointer;
+  
+                      &:hover {
                         background-color: #2dbb51;
-                        color: white;
-                        border-radius: 10px;
-                        transition: 0.4s;
-                        cursor: pointer;
-
-                        &:hover {
-                          background-color: #2dbb51;
-
-                          img {
-                            width: 12px;
-                            height: 10px;
-                          }
-                        }
-
+  
                         img {
-                          transition: 0.4s;
-                          margin-left: 5px;
-                          width: 0;
-                          height: 0;
+                          width: 12px;
+                          height: 10px;
                         }
                       }
+  
+                      img {
+                        transition: 0.4s;
+                        margin-left: 5px;
+                        width: 0;
+                        height: 0;
+                      }
                     }
-
-                    .events-name {
-                      font-weight: 700;
-                      font-size: 14px;
-                      line-height: 24px;
-                      color: #2dbb51;
-                      text-align: center;
-                    }
-
-                    .description {
-                      margin-top: 5px;
-                      overflow: hidden;
-                      white-space: pre-line;
-                      text-overflow: ellipsis;
-                      width: 100%;
-                      height: 40%;
-                      font-size: 12px;
-                      text-align: center;
-                    }
-
-                    .events-date {
-                      margin-top: 10px;
-                      font-weight: 700;
-                      font-size: 12px;
-                      line-height: 15px;
-                      color: #2dbb51;
-                      text-align: right;
+                    .date-news{
+                      display: flex;
+                      align-items: center;
+  
+                      img{
+                        width: 16px;
+                        height: 16px;
+                        margin-right: 5px;
+                      }
                     }
                   }
-
-
                 }
+  
+  
               }
-
             }
-
+  
           }
         }
       }
@@ -2155,66 +2186,113 @@ body {
 
     .home-box {
       padding: 0;
-      background-image: url("../public/images/phone-bg3.jpg");
-      background-size: cover;
+      display: block;
 
       .left-site {
         padding: 15px;
         width: 100%;
-        height: 100%;
+        height: 50%;
 
 
         .title-home {
           text-align: center;
           width: 100%;
-          margin: 15% auto 40px auto;
+          margin: 2% auto 40px auto;
           font-weight: 700;
-          font-size: 40px !important;
-          line-height: 65px;
-          color: #2dbb51;
-
+          font-size: 35px !important;
+          line-height: 50px;
+        
           span {
-            font-size: 24px !important;
+            font-size: 20px !important;
           }
         }
 
         .description-home {
           width: 100%;
-          font-size: 24px;
+          font-size: 22px;
         }
 
         .line-home {
           width: 100%;
-          height: 30px;
+          height: 18px;
           background-color: #2dbb51;
           border-radius: 25.5px;
-          margin-top: 50px;
+          margin-top: 20px;
         }
 
-        .circle-home {
-          margin: 40px auto 0 auto;
-          width: 300px;
-          height: 300px;
-
-          .circle-two {
-            width: 200px;
-            height: 200px;
-
-            .circle-three {
-              width: 100px;
-              height: 100px;
-
-              img {
-                width: 60px;
-              }
-            }
-          }
-        }
 
       }
 
       .right-site {
-        display: none;
+      padding: 10px;
+      width: 100%;
+      height: 50%;
+      display: flex;
+      justify-content: center;
+      
+      .sloy {
+        margin-top: 7%;
+        width: 80%;
+    
+        .slick-prev {
+          width: 30px;
+          height: 30px;
+          left: -35px;
+          border-radius: 50%;
+          background-image: url("../public/images/prev-slide.png");
+          background-size: 60%;
+          background-position: center;
+          background-repeat: no-repeat;
+          border: 0.1px solid #2fe65d;
+
+          &::before {
+            display: none;
+          }
+        }
+
+        .slick-next {
+          width: 30px;
+          height: 30px;
+          right: -35px;
+          border-radius: 50%;
+          background-image: url("../public/images/next-slide.png");
+          background-size: 60%;
+          background-position: center;
+          background-repeat: no-repeat;
+          border: 0.1px solid #2fe65d;
+
+          &::before {
+            display: none;
+          }
+        }
+
+        .slick-dots {
+          li {
+            button {
+              &::before {
+                font-size: 20px;
+                color: #2fe65d;
+              }
+            }
+          }
+
+          .slick-active {
+
+          }
+        }
+
+        .click-slide-box {
+      
+          img {
+            object-fit: cover;
+            margin: 0 auto !important;
+            border-radius: 8px;
+            width: 97% !important;
+            height: 100%;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          }
+        }
+      }
       }
     }
 
@@ -2539,7 +2617,6 @@ body {
 
           .Events-photo {
             margin: 40px auto;
-            padding: 20px;
             width: 92%;
           }
         }

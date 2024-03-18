@@ -6,9 +6,9 @@ import axios from "axios";
 const Statistic = () => {
     let value = useContext(MyContext);
     const [MainList, setMainList] = useState([{
-        doctors: "",
-        services: "",
-        patients: ""
+        doctors: 0,
+        services: 0,
+        patients: 0
     }]);
     const [doctors, setDoctor] = useState("");
     const [services, setServices] = useState("");
@@ -21,11 +21,11 @@ const Statistic = () => {
                 "Authorization": `Token ${localStorage.getItem("token")}`,
             }
         }).then((response) => {
-            setId(response.data[0].id);
+            setId(response.data[0] && response.data[0].id);
             let newList = {
-                doctors: response.data[0].doctors,
-                services: response.data[0].services,
-                patients: response.data[0].patients
+                doctors: response.data[0] ? response.data[0].doctors : 0,
+                services: response.data[0] ? response.data[0].services : 0,
+                patients: response.data[0] ? response.data[0].patients : 0
             };
             setMainList(newList)
         }).catch((error) => {
