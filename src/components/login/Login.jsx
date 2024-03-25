@@ -22,7 +22,7 @@ const Login = () => {
                 password
             };
 
-            axios.post(`http://urgut.narpay-ttb.uz/auth/v1/login/`, user).then((response) => {
+            axios.post(`http://api.urgut-ttb.uz/auth/v1/login/`, user).then((response) => {
                 setLoading("Loading...")
                 localStorage.setItem("token", response.data.token);
                 window.location.pathname = '/';

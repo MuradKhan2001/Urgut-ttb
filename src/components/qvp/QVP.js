@@ -27,6 +27,7 @@ function Qvp() {
         <>
             <div className="qvp-container">
                 <Navbar/>
+                <div className="organization-title">{t("fullNameQvp")}</div>
                 <div className="cards-content">
                     {qvp.map((item,index)=>{
                         return <div key={index} className='content' >
