@@ -157,6 +157,7 @@
         }
 
         .items {
+          width: 100%;
           cursor: pointer;
           margin-top: 30px;
           display: flex;
@@ -164,15 +165,14 @@
 
           .icon {
             margin-right: 12px;
-            width: 40px;
-            height: 40px;
-
+            width: 15%;
             img {
-              width: 100%;
+              width: 40px;
             }
           }
 
           .name {
+            width: 70%;
             font-size: 18px;
           }
         }

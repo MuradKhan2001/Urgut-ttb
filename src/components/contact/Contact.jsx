@@ -135,7 +135,7 @@ const Contact = () => {
                                     <img src="./images/telegram2.png" alt=""/>
                                 </div>
                                 <a href={item.telegram} target="_blank" className="name">
-                                    narpay_ttb
+                                    urgut_ttb
                                 </a>
                             </div>
 
@@ -144,7 +144,7 @@ const Contact = () => {
                                     <img src="./images/instagram.png" alt=""/>
                                 </div>
                                 <a href={item.instagram} target="_blank" className="name">
-                                    narpay_ttb
+                                    urgut_ttb
                                 </a>
                             </div>
 
@@ -153,13 +153,13 @@ const Contact = () => {
                                     <img src="./images/facebook.png" alt=""/>
                                 </div>
                                 <a href={item.facebook} target="_blank" className="name">
-                                    narpay_ttb
+                                    urgut_ttb
                                 </a>
                             </div>
 
                             <div className="items">
                                 <div className="icon">
-                                    <img src="./images/gps.png" alt=""/>
+                                    <img src="./images/gps2.png" alt=""/>
                                 </div>
                                 <div className="name">{item.address}</div>
                             </div>
