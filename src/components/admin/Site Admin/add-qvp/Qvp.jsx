@@ -16,6 +16,10 @@ const Addqvp = () => {
   const [contact, setContact] = useState("");
   const [name, setName] = useState("");
   const [image, setImage] = useState(null);
+  
+  const [qvp, setQvp] = useState(1);
+
+  
 
   const getImage = (e) => {
     setImage(e.target.files[0]);
@@ -72,6 +76,7 @@ const Addqvp = () => {
       Post.append("translations", JSON.stringify(translations));
       Post.append("image", image);
       Post.append("contact", contact);
+      Post.append("type", qvp);
 
 
       axios
@@ -122,6 +127,11 @@ const Addqvp = () => {
 
   return (
     <div className="qvp-box">
+      <div className="header-side">
+          <div onClick={()=> setQvp(1)} className={`tab-item ${qvp === 1 ? "tab-item-active" : ""}`}>KTMP</div>
+          <div onClick={()=> setQvp(2)} className={`tab-item ${qvp === 2 ? "tab-item-active" : ""}`}>OP</div>
+          <div onClick={()=> setQvp(3)} className={`tab-item ${qvp === 3 ? "tab-item-active" : ""}`}>OSHP</div>
+      </div>
       <div className="header-side">
         <div className="filter-box">
           <div className="inputs">
@@ -205,6 +215,7 @@ const Addqvp = () => {
 
           <tbody>
             {MainList.map((item, index) => {
+             if(item.type == qvp){
               return (
                 <tr key={index}>
                   <td>{index + 1}</td>
@@ -223,6 +234,7 @@ const Addqvp = () => {
                   </td>
                 </tr>
               );
+             }
             })}
           </tbody>
         </table>

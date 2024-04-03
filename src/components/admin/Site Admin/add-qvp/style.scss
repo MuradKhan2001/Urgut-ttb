@@ -13,7 +13,7 @@
     overflow-y: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding-left: 10px;
     padding-right: 10px;
     border-bottom: 1px solid #232323;
@@ -82,6 +82,31 @@
       font-weight: bold;
       color: white;
     }
+    .tab-item{
+      width: 140px;
+      height: 80%;
+      border: 1px solid #2dbb51;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      margin-right: 15px;
+      color: #2dbb51;
+      transition: 0.3s;
+      cursor: pointer;
+
+      &:hover{
+        background-color: #2dbb51;
+        color: white;
+      }
+    }
+    .tab-item-active{
+      background-color: #2dbb51;
+      color: white;
+    }
+  
   }
 
   .table-content {

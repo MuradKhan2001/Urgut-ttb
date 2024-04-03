@@ -4,7 +4,7 @@
   "news": "Yangiliklar",
   "teachers": "Bo'limlar",
   "Vacancy": "Bo'sh ish o'rni",
-  "qvp": "OP",
+  "qvp": "Poliklinikalar",
   "contact": "Aloqa",
 
   "leaders": "Raxbariyat",
@@ -47,7 +47,12 @@
   "title3": "Talab etiladigan ish tajribasi:",
   "title4": "Maosh:",
 
-  "nameQvp":"OP nomi",
+  "nameQvp":"Poliklinika nomi",
   "follow": "Bizni kuzatib boring !",
-  "fullNameQvp":"Oilaviy Poliklinika"
+  "fullName1":"Ko'p tarmoqli markaziy poliklinika",
+  "fullName2":"Oilaviy poliklinika",
+  "fullName3":"Oilaviy shifokorlik punkti",
+  "tab1":"KTMP",
+  "tab2":"OP",
+  "tab3":"OSHP"
 }

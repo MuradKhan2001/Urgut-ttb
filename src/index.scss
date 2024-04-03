@@ -2172,6 +2172,37 @@ body {
     text-align: center;
 
   }
+  .tab-content{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .tab-item{
+      width: 120px;
+      height: 30px;
+      border: 1px solid #1a7c33;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #1a7c33;
+      font-weight: bold;
+      border-radius: 8px;
+      margin-right: 15px;
+      transition: 0.3s;
+      cursor: pointer;
+      &:hover{
+        background-color: #1a7c33;
+       color: white;
+      }
+    }
+
+    .tab-item-active{
+      background-color: #1a7c33;
+      color: white;
+    }
+    
+  }
 
   .cards-content {
     width: 100%;
@@ -3055,6 +3086,18 @@ body {
       font-weight: 700;
       font-size: 20px;
     
+    }
+    .tab-content{
+      margin-top: 20px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .tab-item{
+        width: 100px;
+        margin-right: 10px;  
+      }
+      
     }
   
     .cards-content {
